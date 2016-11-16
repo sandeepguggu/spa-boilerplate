@@ -1,8 +1,15 @@
 var path = require('path');
 var webpack = require('webpack');
 var config = require('./webpack.base');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var rootPath = path.resolve(__dirname, '../');
 var assetsPath = path.resolve(rootPath, './dist/www/static');
+
+config.module.loaders.push({
+  test: /\.scss$/,
+  loader: ExtractTextPlugin.extract('css!sass'),
+  include: path.join(rootPath, 'src')
+});
 
 config.entry = [
   "./src/index"
@@ -15,6 +22,9 @@ config.output = {
 };
 
 config.plugins = [
+  new ExtractTextPlugin('style.css', {
+    allChunks: true
+  }),
   new webpack.DefinePlugin({
     'process.env': {
       NODE_ENV: '"production"'
