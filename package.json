@@ -7,7 +7,8 @@
   "author": "Sandeep Gunduboyina <sandeepgy11@gmail.com>",
   "license": "GPL",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "www": "webpack --config scripts/webpack.prod.js && cp index.html dist/www/"
   },
   "dependencies": {
     "babel-core": "^6.18.2",
