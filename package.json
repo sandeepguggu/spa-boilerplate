@@ -1,0 +1,9 @@
+{
+  "name": "try-yarn",
+  "version": "1.0.0",
+  "description": "Setup tools for building an app",
+  "main": "src/index.js",
+  "repository": "git@github.com:sandeepguggu/try-yarn.git",
+  "author": "Sandeep Gunduboyina <sandeepgy11@gmail.com>",
+  "license": "GPL"
+}
