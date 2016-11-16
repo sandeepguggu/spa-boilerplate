@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node server.js",
-    "www": "webpack --config scripts/webpack.prod.js && cp index.html dist/www/"
+    "www": "rm -rf dist && webpack --config scripts/webpack.prod.js && cp index.prod.html dist/www/index.html"
   },
   "dependencies": {
     "babel-core": "^6.18.2",
