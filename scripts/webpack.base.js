@@ -7,6 +7,10 @@ module.exports = {
       test: /\.js$/,
       loaders: ['babel'],
       include: path.join(rootPath, 'src')
+    }, {
+      test: /\.js$/,
+      loaders: ['eslint-loader'],
+      include: path.join(rootPath, 'src')
     }]
   }
 };
