@@ -1,9 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import './base.scss';
+const yarnImg = require('../images/yarn.jpg');
 
+import './base.scss';
 render(
-  <span>Try yarn</span>,
+  <span>
+    <img src={yarnImg} />
+  </span>,
   document.querySelector('#root')
 );

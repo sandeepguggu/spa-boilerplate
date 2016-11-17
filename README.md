@@ -11,3 +11,10 @@ brew install yarn
 ````
 export PATH="$PATH:$HOME/.yarn/bin"
 ````
+
+# image-webpack-loader
+
+If module fails to load try building libpng
+````
+brew install libpng
+````
