@@ -1,10 +1,9 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+const bulbSVG = require('images/bulb.svg?raw=true');
 import './base.scss';
 render(
-  <span>
-    <img src="images/yarn.jpg" />
-  </span>,
+  <span dangerouslySetInnerHTML={{__html: bulbSVG}} />,
   document.querySelector('#root')
 );
