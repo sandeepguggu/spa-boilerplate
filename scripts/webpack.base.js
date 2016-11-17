@@ -14,21 +14,15 @@ module.exports = {
     }, {
       test: /.*\.(gif|png|jpe?g|svg)$/i,
       loaders: [
-        'file-loader',
-        {
-          loader: 'image-webpack',
-          query: {
-            progressive: true,
-            optimizationLevel: 7,
-            interlaced: false,
-            pngquant: {
-              quality: '65-90',
-              speed: 4
-            }
-          }
-        }
+        'file?hash=sha512&digest=hex&name=[hash].[ext]',
+        'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
       ],
       include: path.join(rootPath, 'images')
     }]
+  },
+  resolve: {
+    alias: {
+      images: path.resolve(rootPath, 'images')
+    }
   }
 };

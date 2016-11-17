@@ -2,6 +2,7 @@
   "presets": ["latest"],
   "plugins": [
     "transform-react-jsx",
-    "react-hot-loader/babel"
+    "react-hot-loader/babel",
+    "transform-react-jsx-img-import"
   ]
 }
