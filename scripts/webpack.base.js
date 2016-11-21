@@ -1,5 +1,6 @@
 var path = require('path');
 var rootPath = path.resolve(__dirname, '../');
+var srcPath = path.resolve(__dirname, '../src');
 
 module.exports = {
   module: {
@@ -26,7 +27,9 @@ module.exports = {
   },
   resolve: {
     alias: {
-      images: path.resolve(rootPath, 'images')
+      images: path.resolve(rootPath, 'images'),
+      constants: path.resolve(srcPath, 'constants'),
+      utils: path.resolve(srcPath, 'utils')
     }
   }
 };
