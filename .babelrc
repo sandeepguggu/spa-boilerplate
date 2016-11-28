@@ -3,6 +3,7 @@
   "plugins": [
     "transform-react-jsx",
     "react-hot-loader/babel",
-    "transform-react-jsx-img-import"
+    "transform-react-jsx-img-import",
+    "transform-class-properties"
   ]
 }
