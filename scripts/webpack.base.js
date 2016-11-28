@@ -29,7 +29,8 @@ module.exports = {
     alias: {
       images: path.resolve(rootPath, 'images'),
       constants: path.resolve(srcPath, 'constants'),
-      utils: path.resolve(srcPath, 'utils')
+      utils: path.resolve(srcPath, 'utils'),
+      components: path.resolve(srcPath, 'components')
     }
   }
 };
