@@ -1,5 +1,5 @@
-# try-yarn
-Trying out yarn cli
+# Single Page Application - Boilerplate
+
 
 # Install yarn
 ````
