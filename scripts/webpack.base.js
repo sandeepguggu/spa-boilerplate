@@ -30,7 +30,10 @@ module.exports = {
       images: path.resolve(rootPath, 'images'),
       constants: path.resolve(srcPath, 'constants'),
       utils: path.resolve(srcPath, 'utils'),
-      components: path.resolve(srcPath, 'components')
+      atoms: path.resolve(srcPath, 'components/atoms'),
+      molecules: path.resolve(srcPath, 'components/molecules'),
+      organisms: path.resolve(srcPath, 'components/organisms'),
+      templates: path.resolve(srcPath, 'components/templates')
     }
   }
 };
